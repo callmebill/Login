@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = 'Source/*.swift'
+  s.source_files  = 'Login/Source/*.swift'
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -105,7 +105,7 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
-  s.resources = 'Resources/*.{png,xib,storyboard,xcassets}'
+  s.resources = 'Login/Resources/*.{png,xib,storyboard,xcassets}'
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
