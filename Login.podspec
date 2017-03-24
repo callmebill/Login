@@ -78,7 +78,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/callmebill/Login.git", :tag => "#{s.version}" }
+  #s.source       = { :git => "https://github.com/callmebill/Login.git", :tag => "#{s.version}" }
+  s.source       = { :git => "/Users/leeco/Desktop/WorkspaceTest/workspace/Login", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,11 +90,13 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = 'Login/**/*.swift'
+  #s.source_files  = 'Login/**/*.swift'
+  #s.source_files  = 'Login/Login.framework'
   #s.exclude_files = "Classes/Exclude"
-
+  #s.ios.preserve_paths      = 'Login/Login.framework'
   # s.public_header_files = "Classes/**/*.h"
-
+  #s.public_header_files  = 'Login/Login.framework/Headers/*.h'
+  s.vendored_frameworks = 'Login/Login.framework'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -105,7 +108,7 @@ Pod::Spec.new do |s|
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
-  s.resources = 'Login/**/*.{png,xib,storyboard,xcassets}'
+  # s.resources = 'Login/**/*.{png,xib,storyboard,xcassets}'
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -117,7 +120,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-   s.frameworks = "UIKit", "Foundation"
+  # s.frameworks = "UIKit", "Foundation"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
