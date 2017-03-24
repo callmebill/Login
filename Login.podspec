@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Login"
-  s.version      = "0.0.2"
+  s.version      = "0.0.4"
   s.summary      = "A framework for try CocoaPods"
 
   # This description is used to generate tags and improve search results.
@@ -78,8 +78,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  #s.source       = { :git => "https://github.com/callmebill/Login.git", :tag => "#{s.version}" }
-  s.source       = { :git => "/Users/leeco/Desktop/WorkspaceTest/workspace/Login", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/callmebill/Login.git", :tag => "#{s.version}" }
+  #s.source       = { :git => "/Users/leeco/Desktop/WorkspaceTest/workspace/Login", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
